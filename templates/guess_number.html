@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the number v.2</title>
+</head>
+<body>
+<h1>Guess the number v.2</h1>
+<h2>Imagine a number from 0 to 1000, ad I will guess this number in max 10 hits!!!</h2>
+<h3>I guess it's {{ guess }}</h3>
+<form method="post">
+    <input type="hidden" name="min" value="{{ min }}">
+    <input type="hidden" name="max" value="{{ max }}">
+    <button type="submit" name="answer" value="big">Too big</button>
+    <button type="submit" name="answer" value="small">Too small</button>
+    <button type="submit" name="answer" value="win">You win</button>
+</form>
+
+</body>
+</html>
