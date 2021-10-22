@@ -4,10 +4,12 @@ min_num = 0
 max_num = 1000
 test = 0 #  made for check if choise is corect
 
-for i in range(10):
+for i in range(11):
     guess = int((max_num - min_num) / 2) + min_num
     while True:
-        if i + 1 == 10:
+        if i == 10:
+            if min_num == 999: # fix for users who picked 1000 because int(0.5)==0
+                guess = 1000
             print(f'Twoja liczba to {guess}!!!')
             break
         try:
